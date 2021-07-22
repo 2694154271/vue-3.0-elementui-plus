@@ -1,7 +1,7 @@
 <template>
     <div class="wrap">
         <leftNav class="left" />
-        <div>
+        <div class="content">
             <Crumbs />
             <router-view />
         </div>
@@ -26,5 +26,12 @@ export default {
 }
 .left {
     width: 200px;
+}
+.content {
+    width: 100%;
+    height: calc(100vh - 104px);
+    background-color: #f5f5f5;
+    padding: 20px;
+
 }
 </style>

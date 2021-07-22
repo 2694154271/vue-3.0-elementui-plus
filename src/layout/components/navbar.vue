@@ -17,6 +17,7 @@
 </template>
 
 <script>
+import { onMounted } from 'vue'
 import { useRouter } from 'vue-router';
 export default {
     data() {
@@ -26,10 +27,10 @@ export default {
     },
     setup() {
         const router = useRouter();
-        function toDashboard() {
+        const toDashboard = () => {
             router.push("/dashboard");
         }
-        function tonav(val) {
+        const tonav = (val) => {
             const obj = {
                 '1': '/one',
                 '2': '/two',
@@ -49,11 +50,11 @@ export default {
 <style scoped>
 .navbar {
     display: flex;
-    height: 56px;   
 }
 .home {
-    line-height: 56px;
-    padding-left: 40px;
+    width: 200px;
+    text-align: center;
+    line-height: 60px;
     cursor: pointer;
 }
 </style>

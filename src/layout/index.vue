@@ -1,7 +1,7 @@
 <template>
     <div class="app-wrapper">
         <div class="main-container">
-            <div class="nav">
+            <div>
                 <navbar />
             </div>
             <app-main />
@@ -27,8 +27,5 @@ export default {
     position: relative;
     height: 100%;
     width: 100%;
-}
-.nav {
-    height: 56px;
 }
 </style>
